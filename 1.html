@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <script src="index.js"></script>
+
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    <meta property="og:site_name" content="CO2 Emission Calculator " />
+    <link rel='stylesheet' id='granola-styles-css'  href= "2style.css">
+</head>
+<body style = "background-color: rgb(151, 122, 237)">
+    <div class="site" id="maincontent">
+        <main class="container">
+            <div class="intro__inner">
+                <h1 class="intro__title">
+                    CO2 Emission Calculator 
+                </h1>
+            </div>
+        </div>
+        <section class="section--home-search section section--background">
+            <div class="section__content">
+                <div class="section__heading" id="new-test">
+                    Estimate carbon emission for your code:               
+                </div>
+                <div class="new-test">
+   
+        <div class="field-group new-test__address">
+            <label for="wgd-cc-url">Paste your code here</label>
+            <input name="wgd-cc-url" id="wgd-cc-url" type="text" placeholder="Paste code" onblur="" required>
+
+            <button class="new-test-button" id="js-new-test-button" type="submit" onclick="trigger()">
+                <span class="new-test-button__message new-test-button__message--default">
+                    Submit                
+                </span>
+            </button>
+        </div>
+    </form>
+</div>
+
+<p id="output"></p>
+
+            </div>
+        </section>
+
+ </main>    
+    <div class="loading-modal js-loading-modal container">
+    <div class="loading-modal__inner section section--background section--large">
+        <div class="loading-modal__fact">
+            <p class="loading-modal__fact-text js-loading-modal-text"></p>
+           
+        </div>
+
+        <div class="loading-modal__animation js-loading-animation">
+        </div>
+    <div class="loading-modal__background"></div>
+</div>
+
+    </body>
+</html>
